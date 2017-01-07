@@ -14,6 +14,9 @@ print('Account =', Account)
 table.foreach(Account, print)
 
 a:show() a:deposit(50.30) a:show() a:withdraw(25.10) a:show()
+local aa,bb, cc= a:getTwoParam()
+print('aa =', aa)
+print('bb =', bb)
 
 parent = {}
 
