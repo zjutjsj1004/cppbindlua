@@ -30,5 +30,5 @@ getmetatable(Account).__index = parent
 
 local ctCommonFun = ctCommonFun()
 ctCommonFun:mytest()
-
+ctCommonFun:addNum(1, 2)
 debug.debug()

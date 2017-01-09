@@ -11,6 +11,7 @@ public:
 
 private:
     int mytest(lua_State *L);
+    int addNum(lua_State *L);
 };
 #endif
 
