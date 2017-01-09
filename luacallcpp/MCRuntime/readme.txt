@@ -1,0 +1,1 @@
+cppbindlua工程运行后会生成cppbindlua.exe，cppbindlua会被拷贝到这个MCRuntime目录下，用于lua的运行
