@@ -18,9 +18,15 @@
     <ClInclude Include="lunar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ctCommonFun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="account.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctCommonFun.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

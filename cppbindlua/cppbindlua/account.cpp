@@ -6,7 +6,7 @@ http://blog.csdn.net/liaowenfeng/article/details/9905083
 http://blog.csdn.net/asmc51/article/details/3848221  */
 /************************************************************************/
 #include "lunar.h"
-
+#include "ctCommonFun.h"
 extern "C" {
 #include "lua.h"
 #include "lauxlib.h"
@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
     luaL_openlibs(L); //luaL_openlibs函数用于打开Lua中的所有标准库，如io库、string库等
 
     Lunar<Account>::Register(L);
+    Lunar<ctCommonFun>::Register(L);
 
     if(argc>1) luaL_dofile(L, argv[1]);//luaL_dofile:C++调用lua的时候要加载并运行lua文件，luaL_loadfile:只单单加载Lua文件
     
