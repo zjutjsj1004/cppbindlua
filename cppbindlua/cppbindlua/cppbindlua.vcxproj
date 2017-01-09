@@ -60,6 +60,9 @@
       <AdditionalLibraryDirectories>F:\Program Files (x86)\Lua\5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(CodeAnalysisInputAssembly) $(MSBuildStartupDirectory)\..\luacallcpp\MCRuntime\ /Y /d </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -80,6 +83,9 @@
       <AdditionalLibraryDirectories>F:\Program Files (x86)\Lua\5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(CodeAnalysisInputAssembly) $(MSBuildStartupDirectory)\..\luacallcpp\MCRuntime\ /Y /d </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ctCommonFun.h" />
